@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="我的接口测试套件">
+    <test name="测试模块">
+        <classes>
+            <class name="com.tester.extend.demo.TestMethodsDemo"/>
+            <methods>
+                <ncloude name="test1"/>
+                <ncloude name="test2"/>
+                <ncloude name="test3"/>
+                <ncloude name="logDemo"/>
+            </methods>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.tester.extend.demo.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

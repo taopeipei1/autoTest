@@ -19,11 +19,11 @@ public class ExpectedException {
     }
 
 //    这是一个成功的异常测试
+   @Test(expectedExceptions= RuntimeException.class)
+    public void  runTimeException(){
 
-    @Test(expectedExceptions = RuntimeException.class)
-    public void runTimeExceptionSuccess(){
-        System.out.println("这是我的异常测试");
         throw new RuntimeException();
     }
+
 
 }
