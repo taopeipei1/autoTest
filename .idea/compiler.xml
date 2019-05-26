@@ -26,12 +26,27 @@
         <module name="Chapter5" />
         <module name="Chapter6" />
       </profile>
+      <profile default="false" name="Annotation profile for Chapter9" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Chapter9" />
+      </profile>
+      <profile default="false" name="Annotation profile for Chapter10" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="autoTest" target="1.5" />
+      <module name="autoTest" target="1.8" />
       <module name="Chapter" target="1.5" />
+      <module name="Chapter10" target="1.8" />
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="1.5" />
+      <module name="Chapter9" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

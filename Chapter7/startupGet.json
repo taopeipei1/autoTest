@@ -1,0 +1,98 @@
+
+[
+  { "description":"这是一个cookies的get请求",
+    "request": {
+      "uri": "/cookiesIn",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+
+      }
+    },
+      "response":{
+        "headers": {
+          "Content-Type": "text/html;charset=gbk"
+        },
+        "text": "调用成功"
+      }
+
+
+    },
+  {
+    "description":"这是我们的第一个cookies例子",
+    "request":{
+      "uri":"/demo1",
+      "method":"get"
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+      "cookies":{
+        "login":"true"
+
+
+      },
+      "text":"获取cookies"
+    }
+  }
+  ,
+
+
+  {
+  "description":"这是一个带参数的get请求",
+  "request":{
+    "uri":"/getwithparam",
+    "method":"get",
+    "cookies":{
+      "login":"true"
+    },
+
+    "queries":{
+      "name":"11",
+      "age":"18"
+    }
+  },
+  "response":{
+    "headers":{
+      "Content-Type":"text/html;charset=gbk"
+    },
+    "text":"我胡汉三又回来了"
+  }
+
+},
+
+
+  {
+   "description" :"模拟一个POST请求",
+    "request":{
+      "uri":"/postDemo",
+      "method":"post",
+      "headers":{
+        "content-type":"application/json"
+      },
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "sex":"18" ,
+        "name":"taopeipei"
+      }
+
+
+    },
+    "response":{
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      },
+
+      "json":{
+        "huhansan":"success",
+        "status":"成功"
+
+      }
+    }
+  }
+
+
+]

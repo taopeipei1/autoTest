@@ -107,6 +107,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
         if(!reportDir.exists()&& !reportDir .isDirectory()){
             reportDir.mkdir();
         }
+        //解决测试报告乱码的问题
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
         // 设置静态文件的DNS
         //怎么样解决cdn.rawgit.com访问不了的情况
