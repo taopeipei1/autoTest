@@ -5,6 +5,8 @@ import lombok.Data;
 
 @Data
 public class User {
+    private String userName;
+
     public String getUserName() {
         return userName;
     }
@@ -45,7 +47,6 @@ public class User {
         this.sex = sex;
     }
 
-    private String userName;
     private String password;
     private String name;
     private String age;

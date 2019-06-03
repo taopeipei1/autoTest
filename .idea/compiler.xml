@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Chapter" />
+        <module name="Chapter12" />
         <module name="Chapter5" />
         <module name="Chapter6" />
       </profile>
@@ -39,11 +40,35 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Annotation profile for Chapter11" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for Chapter10 (1)" enabled="true">
+        <sourceOutputDir name="../../../Chapter10/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../../Chapter10/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Chapter10 (1)" />
+      </profile>
+      <profile default="false" name="Annotation profile for Chapter13" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Chapter13" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="autoTest" target="1.8" />
       <module name="Chapter" target="1.5" />
       <module name="Chapter10" target="1.8" />
+      <module name="Chapter10 (1)" target="1.8" />
+      <module name="Chapter11" target="1.8" />
+      <module name="Chapter12" target="1.5" />
+      <module name="Chapter13" target="1.8" />
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="1.5" />
       <module name="Chapter9" target="1.8" />
