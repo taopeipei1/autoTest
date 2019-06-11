@@ -20,7 +20,7 @@ import java.util.Objects;
 
 @Log4j
 @RestController
-@Api(description = "用户管理系统")
+@Api(value = "v1",description = "用户管理系统")
 @RequestMapping("v1")
 public class UserManager {
 
@@ -36,7 +36,7 @@ public class UserManager {
         int i  = template.selectOne("login",user);
         Cookie cookie = new Cookie("login","true");
         response.addCookie(cookie);
-
+        log.info("查看到的结果是"+i);
         if(i==1){
             return true;
         }
@@ -52,7 +52,6 @@ public class UserManager {
             result = template.insert("addUser",user);
         }
         if(result>0){
-
             log.info("添加用户的数量是:"+result);
             return true;
         }

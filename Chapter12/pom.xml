@@ -19,6 +19,7 @@
                             ./src/main/resources/testng.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
+                    <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
 
             </plugin>

@@ -1,77 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
-    <wildcardResourcePatterns>
-      <entry name="!?*.java" />
-      <entry name="!?*.form" />
-      <entry name="!?*.class" />
-      <entry name="!?*.groovy" />
-      <entry name="!?*.scala" />
-      <entry name="!?*.flex" />
-      <entry name="!?*.kt" />
-      <entry name="!?*.clj" />
-      <entry name="!?*.aj" />
-    </wildcardResourcePatterns>
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="Chapter" />
+        <module name="Chapter13" />
         <module name="Chapter12" />
-        <module name="Chapter5" />
-        <module name="Chapter6" />
-      </profile>
-      <profile default="false" name="Annotation profile for Chapter9" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
+        <module name="Chapter" />
+        <module name="Chapter10" />
         <module name="Chapter9" />
+        <module name="Chapter5" />
+        <module name="Chapter11" />
       </profile>
-      <profile default="false" name="Annotation profile for Chapter10" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for Chapter11" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for Chapter10 (1)" enabled="true">
+      <profile name="Annotation profile for Chapter10 (1)" enabled="true">
         <sourceOutputDir name="../../../Chapter10/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../../../Chapter10/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="Chapter10 (1)" />
       </profile>
-      <profile default="false" name="Annotation profile for Chapter13" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile name="Annotation profile for Chapter" enabled="true">
+        <sourceOutputDir name="../Chapter5/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Chapter5/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="Chapter13" />
+        <module name="Chapter6" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="autoTest" target="1.8" />
-      <module name="Chapter" target="1.5" />
-      <module name="Chapter10" target="1.8" />
-      <module name="Chapter10 (1)" target="1.8" />
-      <module name="Chapter11" target="1.8" />
-      <module name="Chapter12" target="1.5" />
-      <module name="Chapter13" target="1.8" />
+      <module name="Chapter10" target="8" />
+      <module name="Chapter11" target="8" />
+      <module name="Chapter12" target="8" />
+      <module name="Chapter13" target="8" />
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="1.5" />
       <module name="Chapter9" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Chapter10" options="-parameters" />
+      <module name="Chapter11" options="-parameters" />
+      <module name="Chapter9" options="-parameters" />
+    </option>
   </component>
 </project>
