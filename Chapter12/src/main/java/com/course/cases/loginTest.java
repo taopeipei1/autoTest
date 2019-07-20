@@ -73,6 +73,7 @@ public class loginTest {
         //获取响应结果
         result = EntityUtils.toString(response.getEntity(),"utf-8");
         System.out.println(result);
+
         TestConfig.store=cookieStore;
         System.out.println(TestConfig.store);
         return result;

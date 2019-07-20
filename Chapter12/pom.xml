@@ -21,12 +21,8 @@
                     </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
-
             </plugin>
-
-
             <!--testng打jar包运行的插件引入-->
-
         </plugins>
     </build>
 

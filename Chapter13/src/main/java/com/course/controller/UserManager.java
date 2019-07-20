@@ -37,6 +37,7 @@ public class UserManager {
         Cookie cookie = new Cookie("login","true");
         response.addCookie(cookie);
         log.info("查看到的结果是"+i);
+
         if(i==1){
             return true;
         }
